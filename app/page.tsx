@@ -104,8 +104,7 @@ export default function Home() {
                       <a
                         target="_blank"
                         rel="noopener noreferrer"
-
-                        href={`https://whitby.bibliocommons.com/v2/search?custom_edit=false&query=(title%3A(${row.Title})%20AND%20author%3A(${row.Author})%20)&searchType=bl`}
+                        href={`https://whitby.ent.sirsidynix.net/client/en_GB/whitbylibrary/search/results/?qu=${encodeURI(`${row.Title} ${row.Author}`)}`}
                         className="underline decoration-black text-ellipsis line-clamp-1"
                       >
                         {row.Title ?? "Missing title"}
